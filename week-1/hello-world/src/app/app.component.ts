@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-/* Create message for view and export this component as AppComponent*/
+/* Define the myWorld variable and assign it a value, also export this component as AppComponent */
 export class AppComponent {
   myWorld = "You are now in Janet's world!";
 }

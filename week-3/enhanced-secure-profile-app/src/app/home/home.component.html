@@ -1,0 +1,42 @@
+<!--
+=============================================================
+ Title:  home.component.html
+ Author: Professor Krasso
+ Date:   23 July 2020
+ Modified By: Janet Blohn
+ Description: Assignment 3.4 - Guarding Routes
+ HTML for the home-component of enhanced-secure-profile-app
+=============================================================
+-->
+
+<!-- Create the Navigation Bar -->
+<nav class="navbar navbar-expand-sm bg-white">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Create a Container with 2 columns; one for an image and one for an unordered list -->
+<div class="container">
+  <h2>Assignment 3.4 - Guarding Routes</h2>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      <!-- Place the image here -->
+      <app-my-image></app-my-image>
+    </div>
+
+    <div class="col-sm-8">
+      <!-- Place the list of details here -->
+      <app-my-details></app-my-details>
+    </div>
+  </div>
+</div>

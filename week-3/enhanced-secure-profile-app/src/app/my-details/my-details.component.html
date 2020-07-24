@@ -1,0 +1,25 @@
+<!--
+=============================================================
+ Title:  my-details.component.html
+ Author: Professor Krasso
+ Date:   16 July 2020
+ Modified By: Janet Blohn
+ Description: Exercise 2.3 - Data Binding
+ HTML for my-details component
+=============================================================
+-->
+
+<!-- create a list with values pulled in from myProfile variable created in my-details-component ts file -->
+<ul class="list-unstyled">
+  <strong>
+  <li class="list-group-item-unstyled">Name: {{ myProfile.fullName }}</li>
+  <li class="list-group-item-unstyled">Favorite food: {{ myProfile.favoriteFood }}</li>
+  <li class="list-group-item-unstyled">Favorite color: {{ myProfile.favoriteColor }}</li>
+  <li class="list-group-item-unstyled">
+    Keywords:
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word}}
+    </span>
+  </li>
+</strong>
+</ul>

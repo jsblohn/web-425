@@ -2,7 +2,7 @@
 ============================================
 ; Title:  app.module.ts
 ; Author: Professor Krasso
-; Date:   23 July 2020
+; Date:   29 July 2020
 ; Modified By: Janet Blohn
 ; Description: Exercise 4.2 – Inversion of Control and Dependency Injection
 ; Root module for di-composer-app

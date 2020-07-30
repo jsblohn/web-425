@@ -28,7 +28,7 @@ export class ComposerListComponent implements OnInit {
 
   /* Create a new Composer object and use the getComposers function to pass in the composers */
   constructor(private composerService: ComposerService) {
-    this.composers = composerService.getComposers();
+    this.composers = this.composerService.getComposers();
    }
 
   ngOnInit(): void {

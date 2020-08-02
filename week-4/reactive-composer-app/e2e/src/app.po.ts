@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date:   02 August 2020
 ; Modified By: Janet Blohn
-; Description: Exercise 4.2 – Inversion of Control and Dependency Injection
+; Description: Exercise 4.3 – Handling Form Events with Observables
 ; AppPage module
 ============================================
 */

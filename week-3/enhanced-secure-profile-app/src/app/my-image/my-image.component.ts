@@ -5,7 +5,7 @@
 ; Date:   01 August 2020
 ; Modified By: Janet Blohn
 ; Description: Assignment 3.4 - Guarding Routes
-; Component for my-image in enhanced-profile-app app
+; Component for my-image in enhanced-secure-profile-app app
 ============================================
 */
 

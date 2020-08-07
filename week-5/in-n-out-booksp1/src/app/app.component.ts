@@ -23,6 +23,7 @@ export class AppComponent {
 
   assignment: string;
 
+// Output the Assignment Name on the page.
   constructor() {
     this.assignment = "Exercise 5.2 - Navigation and Layout";
   }

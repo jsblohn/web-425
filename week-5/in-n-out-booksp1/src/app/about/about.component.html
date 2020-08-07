@@ -1,0 +1,37 @@
+<!--
+=============================================================
+ Title:  about.component.html
+ Author: Professor Krasso
+ Date:   06 August 2020
+ Modified By: Janet Blohn
+ Description: Exercise 5.2 – Navigation and Layouts
+ HTML for the about.component of in-n-out-booksp1 app
+=============================================================
+-->
+<!-- Create the layout for the author's picture and a 75-word bio about a book. -->
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <div fxLayout="column" style="padding-left: 10%">
+      <div>
+        <img src="./assets/quote.jpg" title="Image of a Mockingbird" alt="Image of a Mockingbird"/>
+      </div>
+
+      <div>
+        <!-- photo by on <a... href... target=>_blank>Unsplash /a-->
+        <em>
+          Image from <a class="attribution-link" href="https://www.storypick.com/to-kill-a-mockingbird-quotes/" target="_blank">Storypick.</a><br />Quote from <i>To Kill a Mockingbird</i>
+        </em>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <h1 class="blue">Harper Lee</h1>
+    <p>Harper Lee is best known for her Pulitzer Prize-winning novel <i>To Kill a Mockingbird</i> which was published in 1960. She also wrote a second novel, <i>Go Set a Watchman</i>, which was written before <i>To Kill a Mockingbird</i>, but wasn’t published until 2015. It included the same characters in their later lives.
+    </p>
+    <p>
+      She was born April 28, 1926, in Monroeville, Alabama. In November of 2007 she was presented with the Presidential Medal of Freedom by President George W. Bush for her “outstanding contribution to America’s literary tradition”. She died at the age of 89 on February 19, 2016.
+    </p>
+    <em>From: <a href="https://www.biography.com/writer/harper-lee" target="-blank" class="attribution-link">Biography.com Editors</a></em>
+  </div>
+</div>

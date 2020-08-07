@@ -27,10 +27,15 @@ body {
 
 .card-title-icon {
   text-align: center;
+  margin: 0 auto;
 }
 
 .card-title-icon, .mat-icon {
   font-size: 72px;
+}
+
+.mat-icon {
+  padding-top: 4rem;
 }
 
 .align-center {

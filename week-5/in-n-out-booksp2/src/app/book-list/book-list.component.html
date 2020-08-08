@@ -11,7 +11,7 @@
 <div fxLayout="column wrap">
   <h2 fxFlex class="green">Top 5 Favorite Books</h2>
   <!-- Create a table from books defined in book.service.ts -->
-  <table fxFlex mat-table [dataSource]="books" class="mat-elevation-z8">
+  <table fxFlex mat-table [dataSource]="books" class="mat-elevation-z8" style="width: 100%">
     <tr mat-header-row *matHeaderRowDef="header"></tr>
     <tr mat-row *matRowDef="let row; columns: header;"></tr>
 

@@ -9,6 +9,7 @@
 ============================================
 */
 
+/* Export as interface IBook with values and attributes defined */
 export interface IBook {
   isbn: string;
   title: string;

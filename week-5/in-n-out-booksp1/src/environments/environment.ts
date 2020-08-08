@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  environment.ts
+; Author: Professor Krasso
+; Date:   05 August 2020
+; Modified By: Janet Blohn
+; Description: Exercise 5.2 – Navigation and Layout
+; Typescript for environments for in-n-out-booksp3 app
+============================================
+*/
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.

@@ -1,0 +1,75 @@
+<!--
+=============================================================
+ Title:  contact.component.html
+ Author: Professor Krasso
+ Date:   12 August 2020
+ Modified By: Janet Blohn
+ Description: Exercise 6.2 - Input/Output Properties, Part 1
+ HTML for the contact.component of in-n-out-booksp4 app
+=============================================================
+-->
+<!-- Create the layout for the contact page. -->
+<div fxLayout="row wrap">
+  <!-- Layout for the Mailing Address Column -->
+  <div fxFlex>
+    <mat-card class="mat-elevation-z0">
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary" inline=true>contact_mail</mat-icon>
+      </mat-card-title>
+      <br />
+      <mat-card-content class="align-center">
+        <p>
+          1234 Some Street
+        </p>
+        <p>
+          Cornfield, NE 68123
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!-- Layout for the Phone Number Column -->
+  <div fxFlex>
+    <mat-card class="mat-elevation-z0">
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary" inline=true>contact_phone</mat-icon>
+      </mat-card-title>
+      <br />
+
+      <mat-card-content class="align-center">
+        <p>
+          Direct: 402-731-3333
+        </p>
+        <p>
+          Toll-free: 1-888-731-3333
+        </p>
+        <p>
+          Fax: 402-731-4444
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!-- Layout for the eMail Address Column -->
+  <div fxFlex>
+    <mat-card class="mat-elevation-z0">
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary" inline=true>email</mat-icon>
+      </mat-card-title>
+      <br />
+
+      <mat-card-content class="align-center">
+        <p>
+          author@email.com
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- A comment at the bottom of the page -->
+<br /><br /><br /><br />
+<div fxLayout="column">
+  <p style="text-align: center">
+    Visit us online, or at one of our great locations throughout the country!
+  </p>
+
+</div>
+

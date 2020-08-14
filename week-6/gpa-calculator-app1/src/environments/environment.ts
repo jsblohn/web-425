@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  environment.ts
+; Author: Professor Krasso
+; Date:   13 August 2020
+; Modified By: Janet Blohn
+; Description: Assignment 6.3 - Layouts
+; Typescript for environments file for gpa-calculator-app1
+============================================
+*/
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.

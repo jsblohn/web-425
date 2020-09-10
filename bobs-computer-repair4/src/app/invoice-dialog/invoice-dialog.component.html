@@ -1,0 +1,40 @@
+<!--
+=============================================================
+ Title:  invoice-summary.component.html
+ Author: Professor Krasso
+ Date:   28 August 2020
+ Modified By: Janet Blohn
+ Description: Bob's Computer Repair Application
+ HTML for the invoice-summary.component of bobs-computer-repair
+=============================================================
+-->
+ <h2>Date: {{ currentDate | date}} </h2>
+ <div>
+   <div fxFlex>
+     <div fxLayout="row">
+       <mat-card class="invoice-form">
+         <div fxLayout="column">
+           <mat-card-title>Your Invoice</mat-card-title>
+           <mat-card-content>
+             <ng-container>
+               <div *ngFor="let repair of repairs; let i =index">
+                 <div>
+                   {{ repairs[i].serviceName }} {{ repairs[i].price | currency}}
+                  </div>
+                </div>
+              </ng-container>
+              <p>Total Repairs: {{ repairTotal | currency }}</p>
+              <p>Total Parts: {{ partsFee | currency }}</p>
+              <p>Total Labor: {{ laborFee | currency }}</p>
+              <p>Total Parts and Labor: {{ partsLaborFee | currency }}</p>
+              <p>Invoice Total: {{ invoiceTotal | currency }}</p>
+              <button mat-raised-button type="reset" color="accent" (click)="clearOrder()">Cancel Order</button>
+
+              <button mat-raised-button type="ordered" color="primary" matDialogClose="ordered">Complete Order</button>
+              <button mat-raised-button type="reset" color="accent" (click)="clearOrder()" matDialogClose="ordered">Exit Invoice</button>
+            </mat-card-content>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+</div>

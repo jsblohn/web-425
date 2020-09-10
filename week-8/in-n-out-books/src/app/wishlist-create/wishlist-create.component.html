@@ -1,0 +1,25 @@
+<!--
+=============================================================
+ Title:  wishlist-create.component.html
+ Author: Professor Krasso
+ Date:   25 August 2020
+ Modified By: Janet Blohn
+ Description: Assignment 8.2 – Server-side Communications
+ HTML for the wishlist-create.component of in-n-out-books app
+=============================================================
+-->
+<form fxLayout="column" class="wishlist-create-form">
+  <!-- Create 2 fields - 1 for the Title, and 1 for the Author -->
+  <mat-form-field fxFlex appearance="fill">
+   <mat-label>Title</mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+
+  <mat-form-field flFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+
+  <!-- A button to add items to the wishlist. When button clicked, it invokes addItem function in ts component -->
+  <button mat-button color="primary" (click)="addItem()">Add item</button>
+</form>

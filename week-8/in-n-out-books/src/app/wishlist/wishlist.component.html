@@ -1,0 +1,29 @@
+<!--
+=============================================================
+ Title:  wishlist.component.html
+ Author: Professor Krasso
+ Date:   25 August 2020
+ Modified By: Janet Blohn
+ Description: Assignment 8.2 – Server-side Communications
+ HTML for the wishlist.component of in-n-out-books app
+=============================================================
+-->
+<div fxLayout="column">
+  <app-wishlist-create fxFlex (addItemEmitter)="updateItemsHandler($event)"></app-wishlist-create>
+  <br />
+  <br />
+  <div>
+    <mat-list fxFlex *ngIf="items && items.length > 0">
+      <!-- Iterate over the items -->
+      <mat-list-item *ngFor="let item of items">
+        <div mat-line>Title: {{ item.title }}</div>
+       <div mat-line>Authors: {{ item.authors }}</div>
+      </mat-list-item>
+    </mat-list>
+
+    <!-- If the wishlist is empty, notify the user -->
+    <div fxFlex *ngIf="!items || items.length === 0">
+      <h2 style="text-align: center">Your wishlist is empty.</h2>
+    </div>
+  </div>
+</div>

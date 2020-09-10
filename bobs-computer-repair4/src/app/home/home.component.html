@@ -1,0 +1,57 @@
+<!--
+=============================================================
+ Title:  home.component.html
+ Author: Professor Krasso
+ Date:   28 August 2020
+ Modified By: Janet Blohn
+ Description: Bob's Computer Repair Application
+ HTML for the home.component of bobs-computer-repair
+=============================================================
+-->
+<div fxLayout="row wrap" fxLayoutGap="20px">
+
+  <!-- Create a form with checkboxes to select services from -->
+<div fxFlex>
+    <mat-card class="mat-elevation-z8 services-form">
+      <mat-card-title>Our List of Services</mat-card-title>
+
+<!--      <form [formGroup]="serviceForm" fxLayout="column" fxLayoutGap="16px" (ngSubmit)="onSubmit()"> -->
+        <form [formGroup]="serviceForm" fxLayout="column" fxLayoutGap="16px" >
+        <mat-card-content>
+          <ng-container>
+            <div fxLayout="column" fxLayoutGap="10px">
+              <div fxFlex formArrayName="serviceOptions" *ngFor="let service of serviceForm.controls.serviceOptions['controls']; let i = index">
+                <mat-checkbox formControlName="{{i}}" [value]="services[i].price" (change)="onCheckboxChanged($event)">
+                {{ services[i].serviceName }}: {{services[i].price | currency}}
+                </mat-checkbox>
+              </div>
+            </div>
+          </ng-container>
+
+            <label>Parts:</label>
+            <input #parts type="number" formControlName="partsFee">
+
+            <label>Labor:</label>
+            <input #labor type="number" text-field formControlName="laborFee">
+            <mat-hint>@ $50.00 per hour</mat-hint>
+
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="alert" (click)="setPartsLaborFee({parts: parts.value, labor: labor.value})">Add Parts & Labor </button>
+        </mat-card-actions>
+        <mat-card-actions>
+          <button mat-raised-button type="reset" color="accent" (click)="clearOrder( )">Cancel Order</button>
+        </mat-card-actions>
+
+        <mat-card-actions layout-align="end">
+          <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+        </mat-card-actions>
+
+
+      </form>
+
+    </mat-card>
+  </div>
+</div>
+

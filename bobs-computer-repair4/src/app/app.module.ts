@@ -22,8 +22,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
 
-//import { MatIconModule } from '@angular/material/icon';
-
 // Import required application modules
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

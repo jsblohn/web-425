@@ -28,10 +28,11 @@
               <p>Total Labor: {{ laborFee | currency }}</p>
               <p>Total Parts and Labor: {{ partsLaborFee | currency }}</p>
               <p>Invoice Total: {{ invoiceTotal | currency }}</p>
-              <button mat-raised-button type="reset" color="accent" (click)="clearOrder()">Cancel Order</button>
+              <button mat-raised-button type="reset" color="accent" (click)="clearInvoice()">Cancel Order</button>
 
               <button mat-raised-button type="ordered" color="primary" matDialogClose="ordered">Complete Order</button>
-              <button mat-raised-button type="reset" color="accent" (click)="clearOrder()" matDialogClose="ordered">Exit Invoice</button>
+              <button mat-raised-button type="reset" color="accent" (click)="clearInvoice()" matDialogClose="ordered">Exit Invoice</button>
+              {{ orderMessage }}
             </mat-card-content>
           </div>
         </mat-card>

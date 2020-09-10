@@ -27,25 +27,26 @@
               </div>
             </div>
           </ng-container>
-
-            <label>Parts:</label>
-            <input #parts type="number" formControlName="partsFee">
-
-            <label>Labor:</label>
-            <input #labor type="number" text-field formControlName="laborFee">
-            <mat-hint>@ $50.00 per hour</mat-hint>
-
+          <mat-card-actions fxLayout="row">
+            <label fxLayout="row">Parts:&nbsp;</label>
+            <input #parts type="number" formControlName="partsFee" appearance="fill" matInput>
+          </mat-card-actions>
+          <mat-card-actions fxLayout="row">
+             <label fxLayout="row">Labor:</label>
+            <input type="number" #labor text-field formControlName="laborFee">
+            <mat-hint>&nbsp;@ $50.00 per hour</mat-hint>
+          </mat-card-actions>
 
         </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="alert" (click)="setPartsLaborFee({parts: parts.value, labor: labor.value})">Add Parts & Labor </button>
-        </mat-card-actions>
-        <mat-card-actions>
-          <button mat-raised-button type="reset" color="accent" (click)="clearOrder( )">Cancel Order</button>
+        <mat-card-actions fxFlex fxLayout="row">
+          <button mat-raised-button color="accent" (click)="setPartsLaborFee({parts: parts.value, labor: labor.value})">Add Parts & Labor </button>
         </mat-card-actions>
 
         <mat-card-actions layout-align="end">
           <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+
+          <button mat-raised-button type="reset" color="accent" (click)="clearOrder( )">Cancel Order</button>
+          {{ orderMessage }}
         </mat-card-actions>
 
 

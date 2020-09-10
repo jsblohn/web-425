@@ -6,7 +6,8 @@
 ; Modified By: Janet Blohn
 ; Description: Bob's Computer Repair Application
 ; Typescript for environments file for bobs-computer-repair app
-=====
+=================================================
+*/
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.

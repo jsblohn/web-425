@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
     // Create the Angular Reactive Form
     this.serviceForm = this.fb.group({
       serviceOptions: new FormArray([]),
-      laborFee: new FormControl('', Validators.pattern(totalsPattern)),
+      laborFee: new FormControl('', Validators.pattern('[+-]?([0-9]*[.])?[0-9]+')),
       partsFee: new FormControl('', Validators.pattern(totalsPattern)),
       partsLaborFee: new FormControl(''),
       invoiceTotal: new FormControl('')

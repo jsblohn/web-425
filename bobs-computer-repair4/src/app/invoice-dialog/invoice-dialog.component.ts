@@ -60,7 +60,7 @@ orderMessage: string;
 
   }
 
-  clearOrder() {
+  clearInvoice() {
     //this.serviceEntries = [];
     this.repairs = [];
     this.repairTotal = 0;
@@ -69,6 +69,7 @@ orderMessage: string;
     this.partsLaborFee = 0;
     this.invoiceTotal = 0;
     this.orderMessage = "Order Cancelled";
+
   }
 
 }
